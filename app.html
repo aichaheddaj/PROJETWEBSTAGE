@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire d'absence des etudiants</title>
+	<style>
+		form {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		input[type=text], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<form action="enregistrer_etudiant.php" method="post">
+		<h2>Formulaire d'absence des etudiants</h2>
+		<label for="nom">Nom :</label>
+		<input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+		<label for="prenom">Prenom :</label>
+		<input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+
+		<label for="email">Adresse e-mail :</label>
+		<input type="text" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+
+		<label for="heure_absence">Heure d'absence :</label>
+		<input type="text" id="heure_absence" name="heure_absence" placeholder="Entrez l'heure d'absence" required>
+
+		<input type="submit" value="Envoyer">
+	</form>
+</body>
+</html>
